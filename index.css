@@ -1,0 +1,29 @@
+body {
+  height: 100vh;
+}
+
+.card-wrapper {
+  display: flex;
+  height: 100%;
+
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  background-color: brown;
+  width: 500px;
+  height: 358px;
+
+  border-radius: 3%;
+}
+
+.card-design {
+  fill: white;
+  height: 100%;
+}
+
+svg {
+  height: 100%;
+  width: 100%;
+}
