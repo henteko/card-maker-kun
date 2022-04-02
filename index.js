@@ -1,7 +1,8 @@
-html2canvas(document.querySelector(".card")).then(canvas => {
-  // download card
-  // let link = document.createElement("a");
-  // link.href = canvas.toDataURL("image/png");
-  // link.download = "card.png";
-  // link.click();
+document.querySelector("#export").addEventListener("click", () => {
+  html2canvas(document.querySelector(".card")).then(canvas => {
+    let link = document.createElement("a");
+    link.href = canvas.toDataURL("image/png");
+    link.download = "card.png";
+    link.click();
+  });
 });
