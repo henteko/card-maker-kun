@@ -1,6 +1,46 @@
 body {
   margin: 0px;
   height: 100vh;
+
+  display: grid;
+  grid-template-columns: 1fr 300px;
+  grid-template-rows: 50px 1fr 30px;
+  grid-template-areas: "header header"
+                       "contents settings"
+                       "footer footer";
+}
+
+.header {
+  grid-area: header;
+  background-color: #FFD3B4;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer {
+  grid-area: footer;
+  background-color: #FFD3B4;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header > p {
+  font-weight: bold;
+  font-size: x-large;
+  color: white;
+}
+
+.footer > p {
+  font-size: small;
+  color: white;
+}
+
+.contents {
+  grid-area: contents;
 }
 
 .card-wrapper {
@@ -31,7 +71,7 @@ svg {
   width: 100%;
 }
 
-.contents {
+.card-contents {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -39,22 +79,58 @@ svg {
   grid-template-rows: 1fr 5fr 1fr;
 }
 
-.contents > div {
+.card-contents > div {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.contents > .top > p {
+.card-contents > .top {
   color: #DFDFDE;
 }
 
-.contents > .body > p {
+.card-contents > .body {
   color: white;
   font-weight: bold;
   font-size: x-large;
 }
 
-.contents > .bottom > p {
+.card-contents > .bottom {
   color: #DFDFDE;
+}
+
+.settings {
+  grid-area: settings;
+  background-color: #98DDCA;
+
+  padding: 5px;
+}
+
+.settings input {
+  box-sizing: border-box;
+  width: 100%;
+  height: 30px;
+}
+
+.settings textarea {
+  box-sizing: border-box;
+  width: 100%;
+  height: 50px;
+}
+
+.settings > .input-wrapper {
+  margin-bottom: 10px;
+}
+
+#export {
+  background-color: #FFAAA7;
+  border: none;
+  border-radius: 5px;
+  width: 100%;
+  height: 50px;
+
+  font-weight: bold;
+  font-size: 20px;
+  color: white;
+  cursor: pointer;
 }
