@@ -53,16 +53,16 @@ body {
 
 .card {
   position: relative;
-  background-color: brown;
+  background-color: #C65D7B;
   width: 500px;
   height: 358px;
 
   border-radius: 3%;
 }
 
-.card-design {
+#card-design {
   position: absolute;
-  fill: white;
+  fill: #ffffff;
   height: 100%;
 }
 
@@ -86,18 +86,18 @@ svg {
 }
 
 .card-contents > .top {
-  color: #DFDFDE;
+  color: #ebebeb;
 }
 
 .card-contents > .body {
-  color: white;
+  color: #ffffff;
   font-weight: bold;
   font-size: x-large;
   text-align: center;
 }
 
 .card-contents > .bottom {
-  color: #DFDFDE;
+  color: #ebebeb;
 }
 
 .settings {
@@ -107,20 +107,37 @@ svg {
   padding: 5px;
 }
 
-.settings input {
+.settings .input-wrapper > input {
   box-sizing: border-box;
   width: 100%;
   height: 30px;
 }
 
-.settings textarea {
+.settings .input-wrapper > textarea {
   box-sizing: border-box;
   width: 100%;
   height: 50px;
 }
 
-.settings > .input-wrapper {
+.settings > div {
   margin-bottom: 10px;
+}
+
+.settings .colors {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.settings .color-label > div {
+  width: 30px;
+  height: 30px;
+}
+
+.settings .designs {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 #export {

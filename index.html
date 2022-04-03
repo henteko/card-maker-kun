@@ -15,7 +15,7 @@
   <div class="contents">
     <div class="card-wrapper">
       <div class="card">
-        <div class="card-design">
+        <div id="card-design">
           <svg version="1.0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280.000000 720.000000"
             preserveAspectRatio="none">
             <g transform="translate(0.000000,720.000000) scale(0.100000,-0.100000)" stroke="none">
@@ -1021,6 +1021,22 @@ l38 13 -45 1 c-28 0 -58 -8 -80 -21z" />
     </div>
   </div>
   <div class="settings">
+    <div class="designs">
+      <input type="checkbox" id="design" checked />
+      <label for="design">
+        Design ON/OFF
+      </label>
+    </div>
+    <div class="colors">
+      <input type="radio" name="color" id="color-0" class="color-input" checked>
+      <label for="color-0" id="color-label-0" class="color-label"></label>
+      <input type="radio" name="color" id="color-1" class="color-input">
+      <label for="color-1" id="color-label-1" class="color-label"></label>
+      <input type="radio" name="color" id="color-2" class="color-input">
+      <label for="color-2" id="color-label-2" class="color-label"></label>
+      <input type="radio" name="color" id="color-3" class="color-input">
+      <label for="color-3" id="color-label-3" class="color-label"></label>
+    </div>
     <div class="input-wrapper">
       <label for="top-text">Top Text</label>
       <input id="top-text" type="text" placeholder="Top Text" />
