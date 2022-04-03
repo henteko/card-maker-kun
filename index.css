@@ -93,6 +93,7 @@ svg {
   color: white;
   font-weight: bold;
   font-size: x-large;
+  text-align: center;
 }
 
 .card-contents > .bottom {
