@@ -54,10 +54,11 @@ document.querySelectorAll(".color-input").forEach(element => {
 });
 
 document.querySelector("#export").addEventListener("click", () => {
+  const fileName = window.prompt("保存するファイル名を入力してください", "card.png");
   html2canvas(document.querySelector(".card"), { backgroundColor: null }).then(canvas => {
     const link = document.createElement("a");
     link.href = canvas.toDataURL("image/png");
-    link.download = "card.png";
+    link.download = fileName;
     link.click();
   });
 });
