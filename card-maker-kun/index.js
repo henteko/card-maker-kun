@@ -1,24 +1,24 @@
 const colors = [
   {
-    base: "#C65D7B",
-    design: "#ffffff",
-    text: "#ffffff",
-    subText: "#ebebeb"
-  },
-  {
     base: "#874356",
     design: "#ffffff",
     text: "#ffffff",
     subText: "#ebebeb"
   },
   {
-    base: "#F68989",
+    base: "#3A3845",
     design: "#ffffff",
     text: "#ffffff",
     subText: "#ebebeb"
   },
   {
     base: "#F6E7D8",
+    design: "#a1a1a1",
+    text: "#3d3d3d",
+    subText: "#636363"
+  },
+  {
+    base: "#fafafa",
     design: "#a1a1a1",
     text: "#3d3d3d",
     subText: "#636363"
