@@ -87,17 +87,19 @@ svg {
 
 .card-contents > .top {
   color: #ebebeb;
+  font-size: 25px;
 }
 
 .card-contents > .body {
   color: #ffffff;
   font-weight: bold;
-  font-size: x-large;
+  font-size: 40px;
   text-align: center;
 }
 
 .card-contents > .bottom {
   color: #ebebeb;
+  font-size: 25px;
 }
 
 .settings {
