@@ -54,11 +54,26 @@ document.querySelectorAll(".color-input").forEach(element => {
 });
 
 document.querySelector("#export").addEventListener("click", () => {
-  const fileName = window.prompt("保存するファイル名を入力してください", "card.png");
+  const top = document.querySelector(".card-contents > .top").innerHTML;
+  const bottom = document.querySelector(".card-contents > .bottom").innerHTML;
+  const body = document.querySelector(".card-contents > .body").innerHTML.replace('<br>', '');
+  let defaultFileName = 'card';
+  if (body !== "") {
+    defaultFileName = body;
+  } else if (bottom !== "") {
+    defaultFileName = bottom;
+  } else if (top !== "") {
+    defaultFileName = top;
+  }
+  const fileName = window.prompt("保存するファイル名を入力してください", defaultFileName);
+  if (fileName === null) {
+    return;
+  }
+
   html2canvas(document.querySelector(".card"), { backgroundColor: null }).then(canvas => {
     const link = document.createElement("a");
     link.href = canvas.toDataURL("image/png");
-    link.download = fileName;
+    link.download = fileName + ".png";
     link.click();
   });
 });
