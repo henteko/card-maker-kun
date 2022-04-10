@@ -93,8 +93,9 @@ svg {
 .card-contents > .body {
   color: #ffffff;
   font-weight: bold;
-  font-size: 40px;
+  font-size: 35px;
   text-align: center;
+  padding: 20px
 }
 
 .card-contents > .bottom {
